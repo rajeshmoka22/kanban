@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Nunito;
+}
+
+body {
+  height: auto;
+  min-height: 100vh;
+  background: linear-gradient(to left bottom, #f8f9ff, #f0f6fc);
+}
+
+#root {
+  height: 100%;
+}
+
+.header {
+  min-height: 80px;
+  height: auto;
+  width: 90%;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px grey;
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.logo {
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 2rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.fa-2x {
+  color: green;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+.kanbanGroups {
+  display:flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: baseline;
+  margin-top: 3rem;
+}
+
+.groupContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+}
+
+.groupName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0.5rem;
+}
+
+.group {
+  min-height: 175px;
+  background: #dde0ef;
+  border-radius: 0.5rem;
+  min-width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+  flex-direction: column;
+  margin: 0 .5rem;
+}
+
+.card {
+  min-height: 100px;
+  width: 225px;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-weight: 500;
+  box-shadow: 1px 1px 3px -1.5px #564545;
+}
+
+.card:not(:last-child){
+  margin-bottom: 0.7rem;
+}
+
+.tag {
+  width: fit-content;
+  padding: 4px 12px;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.5rem 0.1rem;
+  margin-top:0;
+}
+
+.taskName {
+  font-weight: bold;
+}
+
+.blue {
+  color: #2a60e4;
+  background: #e8eefc;
+}
+
+.violet {
+  color: #8a53ff;
+  background: #f8f0ff;
+}
+
+.orange {
+  color:#ff9595;
+  background: #fff0f0;
+}
+
+.green {
+  color: green;
+  background: #dfeadf;
+}
+
+.cardFooter {
+  text-align: right;
+  margin-top: 0.25rem;
+}
+
+.cardFooter i {
+  padding: 0.30rem 0.5rem;
+}
+
+.dottedBorder {
+  border: 2px dotted #2a60e4;
+}
+
+.instruction{
+  color:white;
+  background: green;
+  height: auto;
+  padding: 4px 8px;
+  margin: 0px 1rem;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 769px) {
+  .kanbanGroups {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 426px){
+  .kanbanGroups {
+    flex-wrap: wrap;
+  }
+  .logo {
+    flex-wrap: wrap;
+    height: auto;
+  }
+}
